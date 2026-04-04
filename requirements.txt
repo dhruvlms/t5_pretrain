@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────
+#  Core Deep Learning
+# ─────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0          # needed by some torch internals
+
+# ─────────────────────────────────────────────
+#  Tokenizer
+# ─────────────────────────────────────────────
+sentencepiece>=0.1.99
+
+# ─────────────────────────────────────────────
+#  Dataset (C4 download from HuggingFace)
+# ─────────────────────────────────────────────
+datasets>=2.14.0
+huggingface-hub>=0.16.4
+
+# ─────────────────────────────────────────────
+#  Numerical
+# ─────────────────────────────────────────────
+numpy>=1.24.0
+
+# ─────────────────────────────────────────────
+#  Progress bars
+# ─────────────────────────────────────────────
+tqdm>=4.65.0
+
+# ─────────────────────────────────────────────
+#  Logging & Monitoring
+# ─────────────────────────────────────────────
+tensorboard>=2.13.0
+wandb>=0.15.0                # optional — set use_wandb=False in config to skip
+
+# ─────────────────────────────────────────────
+#  Utilities
+# ─────────────────────────────────────────────
+packaging>=23.0              # version checks inside torch/datasets
+filelock>=3.12.0             # used by huggingface-hub internally
+requests>=2.31.0             # used by datasets for streaming
